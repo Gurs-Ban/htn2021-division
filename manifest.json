@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+	"name": "di/vision",
+	"version": "0.01",
+	"content_scripts": [
+		{
+			"matches": ["<all_url>"
+			],
+			"js":["content.js"]
+		}
+	],
+
+	"background": {
+		"scripts": ["background.js"]
+	},
+
+	"browser_action": {
+		"default_icon": ""
+	}
+}
