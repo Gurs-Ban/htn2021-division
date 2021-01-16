@@ -1,0 +1,22 @@
+{
+	"manifest_version": 2,
+	"name": "di/vision",
+	"version": "0.1",
+	
+	"icons": {
+		"128": "icon.png"
+	},
+	"permissions": ["storage", "alarms"],
+
+	"content_scripts": [
+		{
+			"matches": ["<all_url>"],
+			"js":["content.js"]
+		}],
+	
+	"app": {
+		"background": {
+			"scripts": ["background.js"]
+		}
+	}
+}
